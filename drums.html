@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="drumsstyle.css">
+    <title>Drum kit</title>
+</head>
+<body>
+    <div class="instructions">
+        
+       <ul>
+        <p>Hotkeys</p>
+
+        
+            <li>H & K = Kick</li>
+            <li>J = Snare</li>
+            <li>E = Close hi-hat</li>
+            <li>R = Open hi-hat</li>
+            <li>G = Hi-tom</li>
+            <li>F = Mid-Tom</li>
+            <li>R = Crash</li>
+            <li>T = Crash 2</li> 
+            <li>Y = Ride</li> 
+            <li>U = Floor</li>  
+     
+        </ul>
+        
+    </div>
+    <div class="drum-container">
+        
+            <div class="box">
+            <div class="drum-button">
+               
+                <button id='snare' onclick="sound('snare')" class="kit snare"></button>
+                <button  id="close" onclick="sound('close')" class="kit close"></button>
+                <button  id="open" onclick="sound('open')" class="kit open"></button>
+                <button id="hi-tom" onclick="sound('hi-tom')" class="kit hi-tom"></button>
+                <button id="mid-tom" onclick="sound('mid-tom')" class="kit mid-tom"></button>
+                <button  id="low-tom" onclick="sound('low-tom')" class="kit low-tom"></button>
+
+                <button id="crash1" onclick="sound('crash')" class="kit crash1"></button>
+
+                <button id="crash2"onclick="sound('crash-bro')" class="kit crash2"> </button>
+
+                <button id='kick1' onclick="sound('kick')" class="kit kick1"> </button>
+                <button id="kick2" onclick="sound('kick')" class="kit kick2"> </button>
+                <button  id="ride" onclick="sound('ride')" class="kit ride"> </button>
+                <button  id="floor" onclick="sound('floor')" class="kit floor"></button>
+            </div>
+            </div>
+    </div>
+
+    <script src="drumsjs.js"></script>
+</body>
+</html>
